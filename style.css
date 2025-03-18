@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.a:hover{
+    color: rgb(60, 196, 60);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.discover:hover{
+    background-color: rgb(60, 196, 60);
+    color: black;
+}
+
+.service-card:hover{
+    background: rgba(144, 190, 144, 0.199);
+    color: black;
+    font-weight: bold;
+}
+
+
+#home {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 5vw;
+    font-weight: 700;
+    font-family: Tahoma;
+}
+
+.hero p {
+    font-style: italic;
+    font-size: 3vh;
+}
+
+.hero a {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: rgb(60, 196, 60);
+    text-decoration: none;
+    border: 2px solid rgb(60, 196, 60);
+    border-radius: 10px;
+}
+
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section p{
+    width: 50%;
+    margin: auto;
+}
+
+.service-card {
+    background-color: rgb(60, 196, 60);
+    color: black;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    width: 300px;
+    display: inline-block;
+}
+
+#contact form {
+    width: 60%;
+    margin: auto;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+button:hover{
+    background-color: rgb(60, 196, 60);
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav .nav-links {
+        /* flex-direction: column; */
+        flex-direction: row;
+        gap: 15px;
+    }
+
+
+    .logo{
+        display: none;
+    }
+
+    .service-card {
+        width: 90%; 
+    }
+
+    #contact form {
+        width: 90%;
+    }
+
+    .two{
+        display: none;
+    }
+}
